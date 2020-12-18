@@ -35,6 +35,11 @@ if(count($_POST)!=0)
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 </head>
 <body>
+<style>
+.container{
+    margin-top:50px;
+}
+</style>
    <div class="container">
    <div class="row">
     <div class="col-lg-6 m-auto">

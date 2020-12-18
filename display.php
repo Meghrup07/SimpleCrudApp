@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
 </head>
 <body>
+<style>
+.container{
+    margin-top:50px;
+}
+</style>
+
     <div class="container">
     <div class="row">
     <div class="col-lg-12">
@@ -21,6 +27,7 @@
                 <th scope="col">Update</th>
                 </tr>
             </thead>
+          
             <?php
             include 'conn.php';
             $query = "SELECT * FROM USER";
@@ -28,6 +35,7 @@
             while($res = mysqli_fetch_array($result))
             {
             ?>
+            
             <tbody>
                 <tr>
                
@@ -42,7 +50,7 @@
             }
             ?>
             </table>
-
+         <a href="create.php"><input type="button" class="btn btn-primary" value = "Create" style="margin:50px 10px; float: right;"></a>
     </div>
     </div>
     </div>
