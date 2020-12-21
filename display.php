@@ -50,7 +50,7 @@
             }
             ?>
             </table>
-         <a href="create.php"><input type="button" class="btn btn-primary" value = "Create" style="margin:50px 10px; float: right;"></a>
+         <a href="create.php"><input type="button" class="btn btn-primary" value = "Create User" style="margin:50px 10px; float: right;"></a>
     </div>
     </div>
     </div>

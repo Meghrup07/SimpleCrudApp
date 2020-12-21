@@ -1,4 +1,31 @@
 <!-- @format -->
+ <?php
+
+include 'conn.php';
+
+if(count($_POST)!=0)
+{
+    extract($_POST);
+    $query = "INSERT INTO USER (username, password ) VALUES ('$username', '$password')";
+    $result = mysqli_query($conn, $query);
+
+    if($result == true)
+    {
+       
+
+    }
+
+    else 
+    {
+        
+    }
+
+}
+
+
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +40,20 @@
 .container{
     margin-top:50px;
 }
+.btn-primary{
+    margin:10px 130px;
+    width:50%;
+}
+.btn-secondary{
+    margin:10px 130px;
+    width:50%;
+    background-color:#007bff;
+    border-color: #007bff;
+}
+.btn-secondary:hover{
+    background-color:#0572e8;
+    border-color: #0572e8;
+}
 </style>
    <div class="container">
    <div class="row">
@@ -22,7 +63,9 @@
      <div class="card-header bg-dark">
      <h1 class="text-center text-white">Crud App</h1>
      </div>
+    </form>
     <h5><a href="create.php"><input type="button" class="btn btn-primary" value="Create User"></a></h5>
+    <h5><a href="display.php"><input type="button" class="btn btn-secondary" value="View User"></a></h5>
     </div>
    </div>
    </div> 
